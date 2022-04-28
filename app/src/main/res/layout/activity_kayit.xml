@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/girisyap_ve_kayitol"
+    android:layout_gravity="center"
+    tools:context=".KayitActivity">
+
+    <ImageView
+        android:id="@+id/isimImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_person_24"
+        android:padding="10dp"
+        app:layout_constraintRight_toLeftOf="@id/txtIsim"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtIsim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="İsim"
+        android:inputType="textCapWords"
+        android:text=""
+        app:layout_constraintRight_toLeftOf="@id/txtSoyisim"
+        app:layout_constraintLeft_toRightOf="@id/isimImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSoyisim"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Soyisim"
+        android:inputType="textCapWords"
+        android:text=""
+        app:layout_constraintLeft_toRightOf="@id/txtIsim"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/sifreImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txtSifre"
+        app:layout_constraintTop_toBottomOf="@id/isimImageView"/>
+
+    <EditText
+        android:id="@+id/txtSifre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Şifrenizi giriniz."
+        android:text=""
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@id/sifreImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtIsim"/>
+
+    <ImageView
+        android:id="@+id/telefonImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_phone_24"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toLeftOf="@id/txtTelefon"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sifreImageView"
+        />
+
+    <EditText
+        android:id="@+id/txtTelefon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="(xxx)-xxx-xx-xx"
+        android:inputType="number"
+        android:text=""
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@id/telefonImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSifre" />
+
+    <ImageView
+        android:id="@+id/konumImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_location_on_24"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toLeftOf="@id/txtKonum"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telefonImageView"/>
+
+    <EditText
+        android:id="@+id/txtKonum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Adres bilgilerinizi giriniz."
+        android:inputType="text"
+        android:text=""
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@id/konumImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTelefon" />
+
+    <ImageView
+        android:id="@+id/emailImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_email_24"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toLeftOf="@id/txtEmail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/konumImageView" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="email@email.com"
+        android:inputType="textEmailAddress"
+        android:text=""
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toRightOf="@id/emailImageView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtKonum"/>
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailImageView"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

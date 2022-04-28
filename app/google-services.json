@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "231437814908",
+    "project_id": "buger-siparis",
+    "storage_bucket": "buger-siparis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231437814908:android:25a1893b0cf67a20d9cdf9",
+        "android_client_info": {
+          "package_name": "com.example.burgersiparis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231437814908-g99ai90jhk7nejqdbn43v4ms81e9e5pu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBxrlPraFAB1GPgnCExru3ATe-suc1yX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231437814908-g99ai90jhk7nejqdbn43v4ms81e9e5pu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
